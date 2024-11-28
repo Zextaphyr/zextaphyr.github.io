@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Markazi+Text:wght@400..700&family=Noto+Sans+TC:wght@100..900&display=swap');
 
 *{
 }
@@ -28,8 +29,12 @@ body{
   width: fit-content;
     backdrop-filter: blur(8px);
 }
-
+h1{
+  font-family:"Baumans", system-ui;
+  font-size: 3.2rem;
+}
 .page{
+  font-family:"Noto Sans TC", sans-serif;
     position: relative;
     top: 0px;
     min-height: 100vh;
@@ -43,10 +48,24 @@ body{
     padding-right: 12vw;
     align-items: center;
     display: flex;
-    padding-bottom: 200px
+    font-size: 15px;
   }
 
 .page > *{
   display: block;
   width: 100%;
 }
+p::first-letter {
+  font-size: 2.5rem;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+}
+#side{
+  background-color: red;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 40vw;
+  height: 100%;
+}
+
